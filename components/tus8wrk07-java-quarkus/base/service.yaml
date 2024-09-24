@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata: 
+  labels: 
+    app.kubernetes.io/instance: tus8wrk07-java-quarkus
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: tus8wrk07-java-quarkus 
+  name: tus8wrk07-java-quarkus
+spec:
+  ports:
+  - port: 8081 
+    targetPort: 8081 
+  selector:
+    app.kubernetes.io/instance: tus8wrk07-java-quarkus 
